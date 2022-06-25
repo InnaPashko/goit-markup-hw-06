@@ -357,7 +357,7 @@
             </svg></a></li>
             <li class="clients-item">
               <a href="" class="client-link">
-                <svg class="clients-icon"th="106px" height="60px">
+                <svg class="clients-icon" width="106px" height="60px">
                 <use href="./images/icons.svg#logo4"></use>
               </svg></a></li>
               <li class="clients-item">
@@ -371,7 +371,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-      <div> <a class="footer-logo link" href="./index.html">Web<span class="footer-color">Studio</span> </span> </a>
+      <div> <a class="footer-logo link" href="./index.html">Web<span class="footer-color">Studio</span></a>
          <address class="address">
           <ul>
             <li class="footer-item">
@@ -411,19 +411,17 @@
       <div class="subscribe">
         <p class="subscribe-title">Подпишитесь на рассылку</p>
         <form name="subscribe-form">
-         <input class="subscribe-input" type="email" placeholder="E-mail"/>
+          <input class="subscribe-input" type="email" placeholder="E-mail"/>
           <button type="submit" class="subscribe-button">Подписаться 
           <svg class="subscribe-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-send"/>
            </svg>
          </button>
-               </div>
-        </form>
+         </form>
       </div>  
       </footer>
     </div>
-      
-    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-close">
@@ -437,7 +435,8 @@
            <div class="input-wrap">
           <input type="text" 
           class="modal-input" 
-          name="user-name" 
+          name="user-name"
+          id="user-name"
           placeholder=" " required />
           <svg class="modal-icon"  width="18" height="18">
             <use href="./images/icons.svg#person-black"></use>
@@ -449,7 +448,8 @@
            <div class="input-wrap">
           <input type="tel" 
           class="modal-input" 
-          name="user-tel" 
+          name="user-tel"
+          id="user-tel"
           placeholder=" " required />
           <svg class="modal-icon"  width="18" height="18">
             <use href="./images/icons.svg#phone-black"></use>
@@ -460,8 +460,9 @@
            <label for="user-email" class="modal-label"> Почта </label>
            <div class="input-wrap">
           <input type="email" 
-          class="modal-input" 
-          name="user-email" 
+          class="modal-input"
+          name="user-email"
+          id="user-email"
           placeholder=" " required />
           <svg class="modal-icon"  width="18" height="18">
             <use href="./images/icons.svg#email-black"></use>
@@ -470,7 +471,7 @@
           </div>
           <div class="modal-field">
             <label for="user-text" class="modal-label"> Комментарий </label>
-            <textarea name="" id="user-text" class="modal-text" placeholder="Введите текст"></textarea>
+            <textarea name="user-text" id="user-text" class="modal-text" placeholder="Введите текст"></textarea>
               </div>
 
           <div class="modal-field">
