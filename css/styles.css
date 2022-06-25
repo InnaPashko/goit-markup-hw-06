@@ -50,7 +50,7 @@ border-bottom: 1px solid #E5E5E5;
 }
 
 
-.header-nav {
+.nav {
 display: flex;
 align-items: center;
 }
@@ -65,7 +65,7 @@ align-items: center;
 color: #212121;
 }
 
-.header-logo, .footer-logo {
+.nav__logo, .footer-logo {
 font-family: 'Raleway';
 color: var(--logo-color);
 font-weight: 700;
@@ -73,12 +73,12 @@ font-size: 26px;
 line-height: 1.19;
 }
 
-.header-list {
+.nav__list {
     display: flex;
     margin-left: 93px;
 }
 
-.header-item {
+.nav__item {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -87,12 +87,12 @@ color: #212121;
 margin-right: 50px;
 }
 
-.header-item:last-child {
+.nav__item:last-child {
     margin-right: 0;
 }
 
 
-.header-link {
+.nav__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -104,12 +104,12 @@ margin-right: 50px;
     position: relative;  
 }
 
-.header-link:hover,
-.header-link:focus{
+.nav__link:hover,
+.nav__link:focus{
 color: var(--logo-color);
 }
 
-.header-link.current::after{
+.nav__link.current::after{
 position: absolute;
 content: " ";
 width: 100%;
@@ -129,24 +129,24 @@ fill: #757575;
 }
 
 
-.contact-item {
+.contact__item {
 align-items: center;
 }
 
-  .contact-item:not(:last-child) {
+  .contact__item:not(:last-child) {
     margin-right: 50px;
     } 
 
 
-.header-item .header-link:last-child{
+.nav__item .nav__link:last-child{
     margin-right: 0;
 }
 
-.contact-icon{
+.contact__icon{
     margin-right: 10px;
 }
 
-.contact-link {
+.contact__link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -159,13 +159,13 @@ align-items: center;
 }
 
 
-.contact-link:hover, 
-.contact-link:focus  {
+.contact__link:hover, 
+.contact__link:focus  {
     color: #2196F3;   
 }
 
-.contact-link:hover .contact-icon, 
-.contact-link:focus .contact-icon {
+.contact__link:hover .contact__icon, 
+.contact__link:focus .contact__icon {
     fill: #2196F3;   
 }
 
@@ -176,9 +176,6 @@ padding-bottom: 200px;
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
 rgba(47, 48, 58, 0.4)), 
 url(../images/Heder.jpg);
-
-
-
 background-repeat: no-repeat;
 max-width:  1600px;
 height: 600px;
@@ -189,7 +186,7 @@ background-size: cover;
 
 }
 
-.hero-text {
+.hero__text {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -204,7 +201,7 @@ margin-right: auto;
 
 }
 
-.hero-btn {
+.hero__btn {
 display: inline-block;
 font-weight: 700;
 font-size: 16px;
@@ -220,15 +217,16 @@ border: 1px solid transparent;
 display: block;
 margin: auto;
 }
+
 .specifics {
  padding-top: 94px;
 }
 
-.specifics-list {
+.specifics__list {
     display: flex;
 }
 
-.svg-specifics{
+.specifics__svg{
     display: block;
     align-items: center;
     background: #F5F4FA;
@@ -242,11 +240,11 @@ justify-content: center;
 margin-bottom: 30px;
 }
 
-.svg-specifics-icon{
+.specifics__icon{
     background-position: 50% 50%;
 }
 
-.specifics-text {
+.specifics__text {
 display: none;
 font-weight: 700;
 font-size: 14px;
@@ -255,18 +253,18 @@ text-transform: uppercase;
 color: #212121;
 }
 
-.specifics-link {
+.specifics__link {
 margin-right: 30px;
 width: 270px;
 }
 
 
 
-.specifics-link:last-child{
+.specifics__link:last-child{
 margin-right: 0;
 }
 
-.specifics-title {
+.specifics__title {
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -276,7 +274,7 @@ margin-bottom: 10px;
 
 }
 
-.specifics-par {
+.specifics__par {
 font-size: 14px;
 line-height: 1.71;
 color: #757575;
@@ -287,7 +285,7 @@ margin-top: 0px;
 padding-bottom: 94px;
 padding-top: 94px;
 }
-.about-text, .team-text {
+.about__text, .team__text {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -296,20 +294,20 @@ color: #212121;
 margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
     display: flex;
     }
 
-.about-item {
+.about__item {
     flex: calc((100%-90px)*3);
     margin-right: 30px;
     position: relative;
     }
-    .about-item:last-child {
+    .about__item:last-child {
         margin-right: 0;
     }
 
-    .about-icon-text{
+    .about__icontext{
     position: absolute;
     width: 100%;
     height: 70px;
@@ -322,7 +320,7 @@ margin-bottom: 50px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-        background: rgba(47, 48, 58, 0.8);
+    background: rgba(47, 48, 58, 0.8);
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -334,29 +332,30 @@ margin-bottom: 50px;
     padding-top: 94px;
     background-color: #F5F4FA;
 }
-.team-text {
+.team__text {
     }
 
-.team-list {
+.team__list {
     display: flex;
     }
-.team-name-prof {
+.employees {
    padding-top: 30px; 
    padding-bottom: 30px;
 }
-.team-item {
+.team__item {
     flex-basis: calc((100% - 90px)/4);
     margin-right: 30px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     }
-.team-item:last-child {
+
+.team__item:last-child {
     margin-right: 0;
     }
 
 
-.team-name {
+.employees__name {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
@@ -365,28 +364,28 @@ color: #212121;
 margin-bottom: 10px;
 }
 
-.team-prof {
+.employees__prof {
 line-height: 1.19;
 text-align: center;
 color: #757575;
 margin-bottom: 16px;
 }
-.team-soc-list{
+.employees__list{
     display: flex;
     justify-content: center;
 }
-.team-soc-item {
+.employees__item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
     background-color: #FFFFFF;;
 }
 
-.team-soc-item:last-child{
+.employees__item:last-child{
     margin-right: 0;
 }
 
-.team-soc-link{
+.employees__link{
 width: 100%;
 height: 100%;
 border-radius: 50%;
@@ -396,18 +395,18 @@ align-items: center;
 justify-content: center;
 fill: #AFB1B8;
 }
-.team-soc-link:hover, 
-.team-soc-link:focus {
+.employees__link:hover, 
+.employees__link:focus {
 background-color: #2196F3;
 }
 
-.team-soc-link:hover .team-soc-icon,
- .team-soc-link:focus .team-soc-icon {
+.employees__link:hover .employees__icon,
+.employees__link:focus .employees__icon {
     fill: #FFFFFF;
 }
 
 
-.team-soc-icon{
+.employees__icon{
 align-items: center;
 justify-content: center;
 fill: #757575;}
@@ -618,18 +617,9 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     border: none;
-    
-      
      }
 
-     
-  /* .subscribe-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 12px;
-         } */
-  
+       
   .subscribe-button.subscribe-icon {
     top: 13px;
     right: 28px;
